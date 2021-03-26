@@ -176,6 +176,12 @@ img {
   text-decoration: none;
 }
 
+/* псевдоэллемент */
+.contacts-header .link::before {
+  content: '';
+  width: ;
+  height: ;
+}
 /* Уникальный контент */
 .section-title {
   font-weight: bold;
@@ -187,6 +193,17 @@ img {
 }
 
 /* Герой */
+
+/* изменить contain веб7 40 мин */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
+  background-color: #c4c4c4;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -218,10 +235,37 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
-.features-list .item {
+.features-list .features-item {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 30px * 4) / 4);
+}
+
+.features-item::before {
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  content: '';
+  height: 120px;
+  background: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
 }
 
 .features-title {
