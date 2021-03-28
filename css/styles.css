@@ -374,6 +374,40 @@ img {
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
+
+/* Постоянные клиенты */
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.clients-list .clients-items {
+  flex-basis: calc((100% - var(--card-set-gap) * 6) / 6);
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  /* background: rgb(158, 67, 67); */
+}
+.clients-link {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+}
+
+.clients-link .icon {
+  fill: #afb1b8;
+}
+
 /* Футер */
 .page-footer {
   background: var(--accent-bg-color);
@@ -414,37 +448,6 @@ img {
   margin-bottom: 9px;
 }
 
-/* Постоянные клиенты */
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-  padding: 0px;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
-}
-
-.clients-list .clients-items {
-  flex-basis: calc((100% - var(--card-set-gap) * 6) / 6);
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
-  background: rgb(158, 67, 67);
-}
-.clients-items {
-  border: 1px solid #afb1b8;
-}
-
-.clients-link .icon {
-  fill: #afb1b8;
-
-  /* justify-content: center;
-  align-items: center; */
-}
 /* portfolio page */
 
 /* Фильтры */
