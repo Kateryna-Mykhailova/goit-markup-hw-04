@@ -21,6 +21,7 @@ html {
   --accent-link-color: #2196f3;
   --header-border: #ececec;
   --projects-description-border: #eeeeee;
+  --icon-color: #afb1b8;
   --card-set-gap: 30px;
 }
 
@@ -77,6 +78,7 @@ img {
 .button.secondary:focus {
   color: var(--accent-text-color);
   background: var(--accent-btn-bg);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button.primari {
   color: var(--accent-text-color);
@@ -133,7 +135,6 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -182,12 +183,6 @@ img {
   margin-right: 10px;
 }
 
-/* псевдоэллемент */
-.contacts-header .link::before {
-  content: '';
-  width: ;
-  height: ;
-}
 /* Уникальный контент */
 .section-title {
   font-weight: bold;
@@ -200,7 +195,6 @@ img {
 
 /* Герой */
 
-/* изменить contain веб7 40 мин */
 .overlay {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -257,7 +251,7 @@ img {
   border-radius: 4px;
   content: '';
   height: 120px;
-  background: #f5f4fa;
+  background: var(--secondary-btn-bg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -357,7 +351,7 @@ img {
 .social-icons .icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 .social-icon-link:hover .icon,
@@ -407,26 +401,25 @@ img {
   height: 90px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--main-logo-color);
 }
 
 .clients-link:hover .icon,
 .clients-link:focus .icon {
-  fill: #2196f3;
+  fill: var(--main-logo-color);
 }
 
 .clients-link .icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 /* Футер */
 .footer {
-  /* display: flex; */
   background: var(--accent-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -438,6 +431,7 @@ img {
   padding: 0px;
   margin-top: -30px;
   margin-left: -30px;
+  align-items: baseline;
 }
 
 .footer-item {
@@ -486,7 +480,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 
 .footer-icons {
@@ -496,7 +490,7 @@ img {
 .footer-icons .icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: var(--accent-text-color);
 }
 
 .footer-icon-link {
@@ -511,7 +505,7 @@ img {
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  background: #2196f3;
+  background: var(--main-logo-color);
 }
 .footer-icons-item:not(:last-child) {
   margin-right: 10px;
@@ -548,6 +542,10 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projects-description {
   padding: 20px 24px 20px 24px;
@@ -572,6 +570,7 @@ img {
   color: var(--primari-text-color);
 }
 .projects-link {
+  display: block;
   text-decoration: none;
 }
 
