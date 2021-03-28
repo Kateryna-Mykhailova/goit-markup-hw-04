@@ -176,8 +176,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--primari-text-color);
   text-decoration: none;
+  align-items: center;
 }
-
 .contacts-header .icon {
   fill: currentColor;
   margin-right: 10px;
