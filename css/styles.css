@@ -202,11 +202,11 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-size: contain;
+  background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
   background-color: #c4c4c4;
-  /* height: 100%;
-  background-repeat: no-repeat; */
+  /* height: 100%; */
+  background-repeat: no-repeat;
 }
 .hero {
   /* background: var(--accent-bg-color); */
@@ -326,7 +326,7 @@ img {
 
 .team-description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   background: var(--page-header-bg);
 }
 
@@ -338,6 +338,42 @@ img {
   color: var(--title-text-color);
 }
 
+.social-icon-conteiner {
+  background: var(--page-header-bg);
+  padding-bottom: 30px;
+}
+.social-icons {
+  display: inline-flex;
+  background: var(--page-header-bg);
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icon-link:hover .icon,
+.social-icon-link:focus .icon {
+  fill: var(--accent-text-color);
+}
+
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background: #2196f3;
+}
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* Футер */
 .page-footer {
   background: var(--accent-bg-color);
@@ -378,7 +414,39 @@ img {
   margin-bottom: 9px;
 }
 
+/* Постоянные клиенты */
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.clients-list .clients-items {
+  flex-basis: calc((100% - var(--card-set-gap) * 6) / 6);
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  background: rgb(158, 67, 67);
+}
+.clients-items {
+  border: 1px solid #afb1b8;
+}
+
+.clients-link .icon {
+  fill: #afb1b8;
+
+  /* justify-content: center;
+  align-items: center; */
+}
 /* portfolio page */
+
 /* Фильтры */
 .filter-section {
   padding-top: 94px;
